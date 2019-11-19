@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+  acordionAtivo:any;
   constructor() {}
+
+
+  openAcordion(tipo){
+    this.acordionAtivo == tipo? this.acordionAtivo = null: this.acordionAtivo = tipo;
+  }
 
 }
